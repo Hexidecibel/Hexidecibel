@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120" width="760" height="120" role="img" aria-labelledby="t">
-<title id="t">Play velo, my browser motorbike physics game, and visit my site</title>
+<title id="t">Play velo, my browser motorbike physics game</title>
 <defs>
 <linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#5a8f00"/><stop offset=".55" stop-color="#0090b8"/><stop offset="1" stop-color="#e0186c"/>
 <animateTransform attributeName="gradientTransform" type="translate" values="-0.3 0;0.3 0;-0.3 0" dur="6s" repeatCount="indefinite"/></linearGradient>
@@ -18,6 +18,6 @@
 </g>
 <circle cx="68" cy="60" r="36" fill="#0a0b14"/>
 <path class="tri" d="M58 42L86 60 58 78Z" fill="#c6ff3d"/>
-<text x="124" y="57" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="34" fill="#0a0b14">PLAY VELO  ·  visit my site</text>
+<text x="124" y="57" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="34" fill="#0a0b14">PLAY VELO  ·  race the ghosts</text>
 <text x="124" y="88" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#0a0b14" opacity=".8">a 2D motorbike physics game I wrote, in your browser</text>
 </svg>

@@ -1,6 +1,6 @@
 <!-- Assets are generated: `node bin/gen-assets.mjs`. Every number here is from my resume. -->
 
-<a href="https://hexidecibel.github.io/">
+<a href="https://ccushman.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
@@ -9,20 +9,20 @@
 </a>
 
 <p align="center">
-  <a href="https://hexidecibel.github.io/#play">
+  <a href="https://velo.cush.rocks">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/play-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="assets/play-light.svg">
-      <img alt="Play velo, a 2D motorbike physics game I wrote, on my site" src="assets/play-dark.svg" width="72%">
+      <img alt="Play velo, a 2D motorbike physics game I wrote, in your browser" src="assets/play-dark.svg" width="72%">
     </picture>
   </a>
 </p>
 
 <p align="center">
-  <a href="https://hexidecibel.github.io/"><b>hexidecibel.github.io</b></a> &nbsp;·&nbsp;
-  <a href="https://hexidecibel.github.io/resume.pdf">Resume</a> &nbsp;·&nbsp;
+  <a href="https://ccushman.com"><b>ccushman.com</b></a> &nbsp;·&nbsp;
+  <a href="https://ccushman.com/resume.pdf">Resume</a> &nbsp;·&nbsp;
+  <a href="https://ccushman.com/#/projects">Projects</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/cc206/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://ccushman.com/#/projects">ccushman.com</a> &nbsp;·&nbsp;
   <a href="mailto:chris.cushman206@gmail.com">Email</a>
 </p>
 
@@ -34,7 +34,7 @@ Since 2026 I build with AI coding agents, and I built the practice that makes th
 
 ## Production work
 
-These repos are private, so here are the receipts.
+These repos are private, so here are the receipts. Write-ups: [out4.events](https://ccushman.com/#/projects/out4) · [Supdox](https://ccushman.com/#/projects/dox).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/work-out4-dark.svg">
@@ -57,17 +57,22 @@ These repos are private, so here are the receipts.
 ## Open source
 
 <p>
+  <a href="https://github.com/Hexidecibel/velo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-velo-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-velo-light.svg"><img alt="velo: a 2D motorbike physics game with server-verified leaderboard runs, on a deterministic 512 Hz simulation that replays identically in every browser engine. Ghosts, replays, 30+ levels." src="assets/card-velo-dark.svg" width="49%"></picture></a>
   <a href="https://github.com/Hexidecibel/companion"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-companion-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-companion-light.svg"><img alt="companion: a phone companion for Claude Code sessions. 610 commits; one React and Tauri codebase for Android, iOS, web, macOS, Linux and Windows." src="assets/card-companion-dark.svg" width="49%"></picture></a>
+</p>
+<p>
   <a href="https://github.com/Hexidecibel/codegrind"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-codegrind-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-codegrind-light.svg"><img alt="codegrind: an AI interview trainer that runs each generated problem's reference solution in a sandbox before serving it, so every problem is provably solvable." src="assets/card-codegrind-dark.svg" width="49%"></picture></a>
-</p>
-<p>
   <a href="https://github.com/Hexidecibel/porch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-porch-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-porch-light.svg"><img alt="porch: self-hosted tunnels, shares and doors on your own domain, with end-to-end encrypted shares." src="assets/card-porch-dark.svg" width="49%"></picture></a>
-  <a href="https://github.com/Hexidecibel/music-errywhere"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-music-errywhere-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-music-errywhere-light.svg"><img alt="music-errywhere: sample-aligned multi-room audio with a guest-friendly PWA, on Snapcast and Music Assistant." src="assets/card-music-errywhere-dark.svg" width="49%"></picture></a>
 </p>
 <p>
+  <a href="https://github.com/Hexidecibel/music-errywhere"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-music-errywhere-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-music-errywhere-light.svg"><img alt="music-errywhere: sample-aligned multi-room audio with a guest-friendly PWA, on Snapcast and Music Assistant." src="assets/card-music-errywhere-dark.svg" width="49%"></picture></a>
   <a href="https://github.com/Hexidecibel/photobooth"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-photobooth-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-photobooth-light.svg"><img alt="photobooth: a Raspberry Pi 5 photo booth with a browser UI, 14 photo effects, plugins and CUPS printing." src="assets/card-photobooth-dark.svg" width="49%"></picture></a>
+</p>
+<p align="center">
   <a href="https://github.com/Hexidecibel/hexi-studio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-hexi-studio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-hexi-studio-light.svg"><img alt="hexi-studio: a self-hosted photo platform and image CDN that deploys to Cloudflare Workers or Docker." src="assets/card-hexi-studio-dark.svg" width="49%"></picture></a>
 </p>
+
+Write-ups on ccushman.com: [velo](https://ccushman.com/#/projects/velo) · [companion](https://ccushman.com/#/projects/companion) · [codegrind](https://ccushman.com/#/projects/codegrind) · [porch](https://ccushman.com/#/projects/porch) · [music-errywhere](https://ccushman.com/#/projects/music-errywhere) · [photobooth](https://ccushman.com/#/projects/photobooth) · [hexi-studio](https://ccushman.com/#/projects/hexi-studio)
 
 ## Stack
 

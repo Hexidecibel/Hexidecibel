@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generates every SVG under assets/: the hero, the three private-work stat
-// strips and the six project cards, each in a dark and a light variant.
+// strips and the seven project cards, each in a dark and a light variant.
 //
 //   node bin/gen-assets.mjs
 //
@@ -193,9 +193,11 @@ const CARDS = [
   { repo: 'music-errywhere', accent: 'pink', icon: 'wave', tag: ['Multi-room synced audio', 'with a guest-friendly PWA'], fact: 'sample-aligned · sub-5 ms drift', chips: ['TypeScript', 'Snapcast', 'Pi'] },
   { repo: 'photobooth', accent: 'amber', icon: 'camera', tag: ['Raspberry Pi 5 photo booth', 'with a browser UI'], fact: '14 effects · plugins · CUPS print', chips: ['Python', 'FastAPI', 'picamera2'] },
   { repo: 'hexi-studio', accent: 'cyan', icon: 'image', tag: ['Self-hosted photo platform', 'and image CDN'], fact: 'Cloudflare Workers or Docker', chips: ['TypeScript', 'Hono', 'R2'] },
+  { repo: 'velo', accent: 'pink', icon: 'bike', tag: ['2D motorbike physics game', 'with server-verified runs'], fact: 'deterministic 512 Hz sim · ghosts', chips: ['TypeScript', 'Canvas', 'Hono'] },
 ];
 
 const ICONS = {
+  bike: (c) => `<circle cx="-15" cy="10" r="10" fill="none" stroke="${c}" stroke-width="4"/><circle cx="16" cy="10" r="10" fill="none" stroke="${c}" stroke-width="4"/><path d="M-15 10l9-17h15l7 17M-6-7h-6M9-7l3-9h7" fill="none" stroke="${c}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`,
   phone: (c) => `<rect x="-14" y="-24" width="28" height="48" rx="6" fill="none" stroke="${c}" stroke-width="4"/><path d="M-5 16h10" stroke="${c}" stroke-width="4" stroke-linecap="round"/>`,
   code: (c) => `<path d="M-10-14L-24 0l14 14M10-14L24 0 10 14" fill="none" stroke="${c}" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>`,
   door: (c) => `<path d="M-16 24V-22h28v46M-24 24h40" fill="none" stroke="${c}" stroke-width="4" stroke-linejoin="round"/><circle cx="5" cy="2" r="3.5" fill="${c}"/>`,
@@ -253,7 +255,7 @@ function play(mode) {
   const t = THEMES[mode];
   const W = 760, H = 120;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="t">
-  <title id="t">Play velo, my browser motorbike physics game, and visit my site</title>
+  <title id="t">Play velo, my browser motorbike physics game</title>
   <defs>
     <linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="${t.lime}"/><stop offset=".55" stop-color="${t.cyan}"/><stop offset="1" stop-color="${t.pink}"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-0.3 0;0.3 0;-0.3 0" dur="6s" repeatCount="indefinite"/></linearGradient>
@@ -272,7 +274,7 @@ function play(mode) {
   </g>
   <circle cx="68" cy="60" r="36" fill="#0a0b14"/>
   <path class="tri" d="M58 42L86 60 58 78Z" fill="#c6ff3d"/>
-  <text x="124" y="57" font-family="${SANS}" font-weight="800" font-size="34" fill="#0a0b14">PLAY VELO  ·  visit my site</text>
+  <text x="124" y="57" font-family="${SANS}" font-weight="800" font-size="34" fill="#0a0b14">PLAY VELO  ·  race the ghosts</text>
   <text x="124" y="88" font-family="${MONO}" font-size="19" fill="#0a0b14" opacity=".8">a 2D motorbike physics game I wrote, in your browser</text>
 </svg>`;
 }
