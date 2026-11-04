@@ -71,7 +71,7 @@ These repos are private, so here are the receipts.
 
 ## Stack
 
-**Daily:** Kotlin · Java · Spring Boot · jOOQ · PostgreSQL · Redis · TypeScript · React · React Native · Python · FastAPI · AWS (ECS, RDS, S3, SQS, SNS) · Docker · CI/CD<br>
+**Daily:** Kotlin · Java · Spring Boot · jOOQ · PostgreSQL · Redis · TypeScript · React · React Native · Python · FastAPI · AWS (ECS/Fargate, RDS, S3, SQS, SNS, Route 53) · Docker · CI/CD<br>
 **AI engineering:** LLM agents and tool use · structured output · model routing and failover · local inference (llama.cpp) · evaluation · Claude Agent SDK · MCP · Claude Code<br>
 **Also:** Cloudflare Workers, D1, R2 · Go · Tauri · Raspberry Pi · multi-tenant SaaS architecture · SSO/SAML/OAuth
 
