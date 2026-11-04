@@ -10,6 +10,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { ride } from './ride-svg.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets');
 mkdirSync(OUT, { recursive: true });
@@ -37,22 +38,13 @@ const write = (name, svg) => {
   writeFileSync(join(OUT, name), svg.replace(/\n\s+/g, '\n').trim() + '\n');
 };
 
-// A tiny side-view motorbike, nose pointing +x, wheels centred on y=0.
-const bike = (t, cls = 'bk') => `
-  <g class="${cls}">
-    <g class="wheel"><circle r="9" fill="none" stroke="${t.ink}" stroke-width="3"/><path d="M-9 0H9M0-9V9" stroke="${t.ink}" stroke-width="1.5"/></g>
-    <g class="wheel" transform="translate(34 0)"><circle r="9" fill="none" stroke="${t.ink}" stroke-width="3"/><path d="M-9 0H9M0-9V9" stroke="${t.ink}" stroke-width="1.5"/></g>
-    <path d="M0 0L12-12H26L34 0" fill="none" stroke="${t.pink}" stroke-width="4" stroke-linejoin="round"/>
-    <path d="M10-13H28L24-19H14Z" fill="${t.pink}"/>
-    <path d="M19-19L15-30L24-34" fill="none" stroke="${t.ink}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="18" cy="-41" r="7" fill="${t.amber}"/>
-  </g>`;
-
 // ---------------------------------------------------------------- hero
 function hero(mode) {
   const t = THEMES[mode];
   const W = 1200, H = 520;
-  const ground = 'M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456';
+  // A real velo run, re-simulated from its recorded inputs: see ride-svg.mjs.
+  const A = ride(t, { W, H });
+  const Z = ride(t, { W, H, still: true });
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="t d">
   <title id="t">Chris Cushman, senior full-stack engineer</title>
   <desc id="d">Senior full-stack engineer. Kotlin, Spring Boot, Java, TypeScript, React, PostgreSQL, AWS. Ships production software with AI coding agents, with plans, written conventions, guard scripts and automated tests.</desc>
@@ -65,6 +57,9 @@ function hero(mode) {
       <animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0;0.5 0;-0.5 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="${t.lime}"/><stop offset="1" stop-color="${t.pink}"/></linearGradient>
+    ${A.defs}
+    <linearGradient id="bf" gradientUnits="userSpaceOnUse" x1="0" x2="0" y1="378" y2="436"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <mask id="band" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="url(#bf)"/></mask>
     <clipPath id="frame"><rect width="${W}" height="${H}" rx="22"/></clipPath>
     <clipPath id="type"><rect class="typer" x="60" y="44" width="0" height="40"/></clipPath>
   </defs>
@@ -80,13 +75,10 @@ function hero(mode) {
     .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) backwards}
     .r1{animation-delay:.9s}.r2{animation-delay:1.2s}.r3{animation-delay:1.5s}.r4{animation-delay:1.8s}
     @keyframes rise{from{opacity:0;transform:translateY(18px)}}
-    .track{stroke-dasharray:14 10;animation:roll 1.2s linear infinite}
-    @keyframes roll{to{stroke-dashoffset:-24}}
-    .wheel{animation:spin .5s linear infinite}
-    @keyframes spin{to{transform:rotate(360deg)}}
+    .still{display:none}
     .live{animation:pulse 1.6s ease-in-out infinite}
     @keyframes pulse{50%{opacity:.25}}
-    @media (prefers-reduced-motion:reduce){*{animation:none!important}.typer{width:640px}.rise{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.ride{display:none}.still{display:inline}.typer{width:640px}.rise{opacity:1}}
   </style>
   <g clip-path="url(#frame)">
     <rect width="${W}" height="${H}" fill="${t.bg}"/>
@@ -120,14 +112,10 @@ function hero(mode) {
       <text x="40" y="27" font-family="${MONO}" font-size="18" fill="${t.ink}">Seattle · 19 yrs</text>
     </g>
 
-    <path d="${ground} V ${H + 10} H -40 Z" fill="${t.panel}" opacity=".85"/>
-    <path id="gp" d="${ground}" fill="none" stroke="url(#ln)" stroke-width="4"/>
-    <path d="${ground}" transform="translate(0 16)" fill="none" stroke="${t.line}" stroke-width="2" class="track"/>
-    <g>
-      <g transform="translate(-17 -9)">${bike(t)}</g>
-      <animateMotion dur="11s" repeatCount="indefinite" rotate="auto" path="M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456"/>
-    </g>
-    <text x="${W - 60}" y="${H - 18}" text-anchor="end" font-family="${MONO}" font-size="16" fill="${t.faint}">velo · playable on my site ↗</text>
+    <g class="ride">${A.fade}<g mask="url(#band)">${A.terrain}</g>${A.bike}</g>
+    <g class="still"><g mask="url(#band)">${Z.terrain}</g>${Z.bike}</g>
+    <rect x="${W - 60 - 14 - Math.ceil(A.caption.length * 16 * 0.6)}" y="${H - 18 - 19}" width="${Math.ceil(A.caption.length * 16 * 0.6) + 28}" height="28" rx="14" fill="${t.bg}" fill-opacity=".97" stroke="${t.line}"/>
+    <text x="${W - 60}" y="${H - 18}" text-anchor="end" font-family="${MONO}" font-size="16" fill="${t.faint}" stroke="${t.bg}" stroke-width="5" stroke-linejoin="round" paint-order="stroke">${esc(A.caption)}</text>
   </g>
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="22" fill="none" stroke="${t.line}"/>
 </svg>`;

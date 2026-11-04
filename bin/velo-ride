@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Re-simulate a real velo run and write the sampled bike poses that the hero
+# banner draws (data/velo-ride.json). gen-assets.mjs reads that file; rerun it
+# afterwards.
+#
+#   bin/velo-ride && node bin/gen-assets.mjs
+#
+# The ride is Cush's 27 — Lintel run of 2026-11-01 (rev 4, 9.586 s). Poses come
+# from velo's own engine via velo/bin/hero-poses, which refuses to write
+# anything unless the replay's hash chain verifies. The window is the last
+# ~5 s: the second and third pit jumps, the nose-dive, and the wheelie that
+# rotates back past vertical onto the flower.
+set -euo pipefail
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+VELO="${VELO:-$HOME/local/src/velo}"
+REPLAY="${REPLAY:-data/replays/8400376f1ad70206/95/9570d90274832a16.json}"
+FROM="${FROM:-4.6}"
+TO="${TO:-9.6}"
+mkdir -p "$HERE/data"
+"$VELO/bin/hero-poses" "$VELO/$REPLAY" --from "$FROM" --to "$TO" --fps 30 --out "$HERE/data/velo-ride.json"
