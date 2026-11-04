@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-labelledby="t">
+<title id="t">porch: Self-hosted tunnels, shares and doors. E2E shares · one box, your domain.</title>
+<defs><clipPath id="c"><rect width="600" height="330" rx="20"/></clipPath>
+<radialGradient id="gl"><stop offset="0" stop-color="#ffb020" stop-opacity="0.385"/><stop offset="1" stop-color="#ffb020" stop-opacity="0"/></radialGradient></defs>
+<style>
+.gl{animation:gl 8s ease-in-out infinite alternate}
+@keyframes gl{to{transform:translate(-120px,40px) scale(1.2)}}
+.ic{animation:bob 3s ease-in-out 0.6s infinite}
+@keyframes bob{50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#c)">
+<rect width="600" height="330" fill="#11131f"/>
+<circle class="gl" cx="560" cy="40" r="220" fill="url(#gl)"/>
+<rect width="600" height="6" fill="#ffb020"/>
+<g transform="translate(528 78)"><g class="ic"><path d="M-16 24V-22h28v46M-24 24h40" fill="none" stroke="#ffb020" stroke-width="4" stroke-linejoin="round"/><circle cx="5" cy="2" r="3.5" fill="#ffb020"/></g></g>
+<text x="40" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="50" letter-spacing="-1" fill="#f4f5fb">porch</text>
+<text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="27" fill="#f4f5fb"><tspan x="40" y="150">Self-hosted tunnels,</tspan><tspan x="40" y="186">shares and doors</tspan></text>
+<text x="40" y="232" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="20" fill="#ffb020">E2E shares · one box, your domain</text>
+<rect x="40" y="262" width="108" height="38" rx="19" fill="#1a1d2e" stroke="#23263a"/><text x="94" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#f4f5fb">Python</text><rect x="158" y="262" width="95" height="38" rx="19" fill="#1a1d2e" stroke="#23263a"/><text x="205.5" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#f4f5fb">HTTPS</text><rect x="263" y="262" width="69" height="38" rx="19" fill="#1a1d2e" stroke="#23263a"/><text x="297.5" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#f4f5fb">PWA</text>
+</g>
+<rect x=".5" y=".5" width="599" height="329" rx="20" fill="none" stroke="#23263a"/>
+</svg>

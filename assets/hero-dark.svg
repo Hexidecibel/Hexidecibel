@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="t d">
+<title id="t">Chris Cushman, senior full-stack engineer</title>
+<desc id="d">Senior full-stack engineer. Kotlin, Spring Boot, Java, TypeScript, React, PostgreSQL, AWS. Ships production software with AI coding agents, with plans, written conventions, guard scripts and automated tests.</desc>
+<defs>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#161929" stroke-width="1"/></pattern>
+<radialGradient id="ga"><stop offset="0" stop-color="#ff3d8b" stop-opacity="0.55"/><stop offset="1" stop-color="#ff3d8b" stop-opacity="0"/></radialGradient>
+<radialGradient id="gb"><stop offset="0" stop-color="#3de0ff" stop-opacity="0.4"/><stop offset="1" stop-color="#3de0ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="nm" x1="0" x2="1" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#c6ff3d"/><stop offset=".5" stop-color="#3de0ff"/><stop offset="1" stop-color="#ff3d8b"/>
+<animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0;0.5 0;-0.5 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#c6ff3d"/><stop offset="1" stop-color="#ff3d8b"/></linearGradient>
+<clipPath id="frame"><rect width="1200" height="520" rx="22"/></clipPath>
+<clipPath id="type"><rect class="typer" x="60" y="44" width="0" height="40"/></clipPath>
+</defs>
+<style>
+.blob1{animation:drift1 14s ease-in-out infinite alternate}
+.blob2{animation:drift2 17s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(-160px,60px)}}
+@keyframes drift2{to{transform:translate(180px,-50px)}}
+.typer{animation:type 2.2s steps(30,end) .3s forwards}
+@keyframes type{to{width:640px}}
+.cur{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) backwards}
+.r1{animation-delay:.9s}.r2{animation-delay:1.2s}.r3{animation-delay:1.5s}.r4{animation-delay:1.8s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+.track{stroke-dasharray:14 10;animation:roll 1.2s linear infinite}
+@keyframes roll{to{stroke-dashoffset:-24}}
+.wheel{animation:spin .5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.live{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.typer{width:640px}.rise{opacity:1}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="1200" height="520" fill="#0a0b14"/>
+<rect width="1200" height="520" fill="url(#g)"/>
+<circle class="blob1" cx="980" cy="120" r="320" fill="url(#ga)"/>
+<circle class="blob2" cx="260" cy="420" r="300" fill="url(#gb)"/>
+<g clip-path="url(#type)">
+<text x="60" y="72" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#a3a8c3"><tspan fill="#c6ff3d">chris@hexidecibel</tspan>:<tspan fill="#3de0ff">~</tspan>$ ./whoami --short</text>
+</g>
+<rect class="cur" x="60" y="52" width="13" height="26" fill="#c6ff3d" opacity=".9">
+<animate attributeName="x" begin="0.3s" dur="2.2s" fill="freeze" calcMode="discrete" values="60;81;102;123;144;165;186;207;228;249;270;291;312;333;354;375;396;417;438;459;480;501;522;543;564;585;606;627;648;669;690"/>
+</rect>
+<g class="rise r1"><text x="56" y="178" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="100" letter-spacing="-3" fill="url(#nm)">Chris Cushman</text></g>
+<g class="rise r2"><text x="60" y="236" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="42" fill="#f4f5fb">Senior full-stack engineer</text></g>
+<g class="rise r3">
+<text x="60" y="284" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="24" fill="#a3a8c3">Kotlin · Spring Boot · Java · TypeScript · React · PostgreSQL · AWS</text>
+</g>
+<g class="rise r4">
+<rect x="60" y="312" width="6" height="58" rx="3" fill="url(#ln)"/>
+<text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="26" fill="#f4f5fb">
+<tspan x="84" y="335">I ship production software with AI coding agents,</tspan>
+<tspan x="84" y="367" fill="#a3a8c3">backed by plans, written conventions, guard scripts and tests.</tspan>
+</text>
+</g>
+<g transform="translate(905 66)">
+<rect width="235" height="40" rx="20" fill="#1a1d2e" stroke="#23263a"/>
+<circle class="live" cx="24" cy="20" r="6" fill="#c6ff3d"/>
+<text x="40" y="27" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="18" fill="#f4f5fb">Seattle · 19 yrs</text>
+</g>
+<path d="M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456 V 530 H -40 Z" fill="#11131f" opacity=".85"/>
+<path id="gp" d="M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456" fill="none" stroke="url(#ln)" stroke-width="4"/>
+<path d="M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456" transform="translate(0 16)" fill="none" stroke="#23263a" stroke-width="2" class="track"/>
+<g>
+<g transform="translate(-17 -9)">
+<g class="bk">
+<g class="wheel"><circle r="9" fill="none" stroke="#f4f5fb" stroke-width="3"/><path d="M-9 0H9M0-9V9" stroke="#f4f5fb" stroke-width="1.5"/></g>
+<g class="wheel" transform="translate(34 0)"><circle r="9" fill="none" stroke="#f4f5fb" stroke-width="3"/><path d="M-9 0H9M0-9V9" stroke="#f4f5fb" stroke-width="1.5"/></g>
+<path d="M0 0L12-12H26L34 0" fill="none" stroke="#ff3d8b" stroke-width="4" stroke-linejoin="round"/>
+<path d="M10-13H28L24-19H14Z" fill="#ff3d8b"/>
+<path d="M19-19L15-30L24-34" fill="none" stroke="#f4f5fb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="18" cy="-41" r="7" fill="#ffb020"/>
+</g></g>
+<animateMotion dur="11s" repeatCount="indefinite" rotate="auto" path="M-40 470 C 120 470, 180 430, 300 438 S 470 486, 600 468 S 800 420, 920 446 S 1100 480, 1240 456"/>
+</g>
+<text x="1140" y="502" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="16" fill="#5d6380">velo · playable on my site ↗</text>
+</g>
+<rect x=".5" y=".5" width="1199" height="519" rx="22" fill="none" stroke="#23263a"/>
+</svg>

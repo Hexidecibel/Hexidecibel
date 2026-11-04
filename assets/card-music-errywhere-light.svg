@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-labelledby="t">
+<title id="t">music-errywhere: Multi-room synced audio with a guest-friendly PWA. sample-aligned · sub-5 ms drift.</title>
+<defs><clipPath id="c"><rect width="600" height="330" rx="20"/></clipPath>
+<radialGradient id="gl"><stop offset="0" stop-color="#e0186c" stop-opacity="0.154"/><stop offset="1" stop-color="#e0186c" stop-opacity="0"/></radialGradient></defs>
+<style>
+.gl{animation:gl 9s ease-in-out infinite alternate}
+@keyframes gl{to{transform:translate(-120px,40px) scale(1.2)}}
+.ic{animation:bob 3s ease-in-out 0.8999999999999999s infinite}
+@keyframes bob{50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#c)">
+<rect width="600" height="330" fill="#ffffff"/>
+<circle class="gl" cx="560" cy="40" r="220" fill="url(#gl)"/>
+<rect width="600" height="6" fill="#e0186c"/>
+<g transform="translate(528 78)"><g class="ic"><path d="M-26 0h6l5-16 8 32 8-26 6 20 5-10h14" fill="none" stroke="#e0186c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<text x="40" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="50" letter-spacing="-1" fill="#11131f">music-errywhere</text>
+<text font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="27" fill="#11131f"><tspan x="40" y="150">Multi-room synced audio</tspan><tspan x="40" y="186">with a guest-friendly PWA</tspan></text>
+<text x="40" y="232" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="20" fill="#e0186c">sample-aligned · sub-5 ms drift</text>
+<rect x="40" y="262" width="160" height="38" rx="19" fill="#f0f2f8" stroke="#dfe2ee"/><text x="120" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#11131f">TypeScript</text><rect x="210" y="262" width="134" height="38" rx="19" fill="#f0f2f8" stroke="#dfe2ee"/><text x="277" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#11131f">Snapcast</text><rect x="354" y="262" width="56" height="38" rx="19" fill="#f0f2f8" stroke="#dfe2ee"/><text x="382" y="288" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="19" fill="#11131f">Pi</text>
+</g>
+<rect x=".5" y=".5" width="599" height="329" rx="20" fill="none" stroke="#dfe2ee"/>
+</svg>

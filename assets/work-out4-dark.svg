@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-labelledby="t">
+<title id="t">out4.events: Event ticketing + social. Founded and built. 2,400 commits in 7 months, 2,900 automated API tests, 500+ API endpoints. Kotlin · Spring Boot · Next.js · React Native.</title>
+<defs><clipPath id="c"><rect width="1200" height="250" rx="20"/></clipPath>
+<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#c6ff3d" stop-opacity="0"/><stop offset=".5" stop-color="#c6ff3d" stop-opacity=".9"/><stop offset="1" stop-color="#c6ff3d" stop-opacity="0"/></linearGradient></defs>
+<style>
+.in{animation:in .7s cubic-bezier(.2,.8,.2,1) backwards}
+.d0{animation-delay:.15s}.d1{animation-delay:.3s}.d2{animation-delay:.45s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.scan{animation:scan 5s ease-in-out 0s infinite}
+@keyframes scan{0%{transform:translateX(-400px)}60%,100%{transform:translateX(1300px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.in{opacity:1}}
+</style>
+<g clip-path="url(#c)">
+<rect width="1200" height="250" fill="#11131f"/>
+<rect width="10" height="250" fill="#c6ff3d"/>
+<rect class="scan" y="246" width="400" height="4" fill="url(#sh)"/>
+<g transform="translate(48 50)">
+<rect width="196" height="34" rx="17" fill="#1a1d2e" stroke="#23263a"/>
+<path d="M20 16v-3a6 6 0 0 1 12 0v3" fill="none" stroke="#a3a8c3" stroke-width="2.4"/><rect x="17" y="15" width="18" height="12" rx="2.5" fill="#a3a8c3"/>
+<text x="44" y="23" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="15" fill="#a3a8c3">private · in prod</text>
+</g>
+<text x="48" y="140" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="50" letter-spacing="-1" fill="#f4f5fb">out4.events</text>
+<text x="48" y="178" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="20" fill="#a3a8c3">Event ticketing + social. Founded and built.</text>
+<text x="48" y="212" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace" font-size="17" fill="#5d6380">Kotlin · Spring Boot · Next.js · React Native</text>
+<line x1="530" y1="60" x2="530" y2="190" stroke="#23263a" stroke-width="2"/>
+<g class="in d0">
+<text x="560" y="128" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="62" letter-spacing="-1.5" fill="#c6ff3d">2,400</text>
+<text x="560" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" fill="#a3a8c3">commits in 7 months</text>
+</g><g class="in d1">
+<text x="775" y="128" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="62" letter-spacing="-1.5" fill="#f4f5fb">2,900</text>
+<text x="775" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" fill="#a3a8c3">automated API tests</text>
+</g><g class="in d2">
+<text x="990" y="128" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="62" letter-spacing="-1.5" fill="#f4f5fb">500+</text>
+<text x="990" y="166" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" fill="#a3a8c3">API endpoints</text>
+</g>
+</g>
+<rect x=".5" y=".5" width="1199" height="249" rx="20" fill="none" stroke="#23263a"/>
+</svg>
