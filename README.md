@@ -20,6 +20,7 @@
 
 <p align="center">
   <a href="https://hexidecibel.github.io/"><b>hexidecibel.github.io</b></a> &nbsp;·&nbsp;
+  <a href="https://hexidecibel.github.io/resume.pdf">Resume</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/cc206/">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://ccushman.com/#/projects">ccushman.com</a> &nbsp;·&nbsp;
   <a href="mailto:chris.cushman206@gmail.com">Email</a>
